@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-newsreader: "Newsreader", Georgia, serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: #f4faff;
+  color: #0d1e25;
+}
+
+.font-newsreader {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.book-spine-effect {
+  box-shadow: inset 8px 0 12px -6px rgba(0, 0, 0, 0.3);
+}
+
+.book-shadow {
+  box-shadow: 0 4px 24px -4px rgba(0, 6, 102, 0.1),
+    0 1px 4px rgba(0, 6, 102, 0.06);
+}
+
+.scholarly-card-shadow {
+  box-shadow: 0 8px 32px -8px rgba(0, 6, 102, 0.15),
+    0 2px 8px rgba(0, 6, 102, 0.08);
+}
+
+/* Marquee animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Swiper customizations */
+.swiper-pagination-bullet {
+  background: #006a6a !important;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: #006a6a !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000666 !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #e7f6ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #006a6a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000666;
+}
+
+/* Form input focus */
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Toast customization */
+.toast-custom {
+  font-family: var(--font-inter);
+}
