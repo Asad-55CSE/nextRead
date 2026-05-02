@@ -4,7 +4,7 @@
 
 ## 🌐 Live URL
 
-[https://nextread.vercel.app](https://nextread.vercel.app) *(replace with your deployed URL)*
+[nextread.app](https://next-read-sigma.vercel.app/)
 
 ---
 
