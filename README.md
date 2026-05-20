@@ -1,5 +1,7 @@
 # NextRead — Digital Book Borrowing Platform
 
+<img src="./screenshot/next read shot.png" alt="App Screenshot">
+
 > A seamless and modern web application designed to digitize the traditional library experience.
 
 ## 🌐 Live URL
